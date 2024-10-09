@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 90vh;
+  width: 45vw;
+  background-color: rebeccapurple;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 12px;
+}
+
+.card {
+  display: flex;
+  width: 270px;
+  height: 250px;
+  background-color: #c65353;
+  margin: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 60vw;
+  }
+  .card {
+    background-color: blue;
+    width: 180px;
+    height: 250px;
+  }
+}
+
+.color-red {
+  animation: color-red 5s infinite;
+  position: relative;
+}
+
+.color-red:hover {
+  transform: rotate(180deg);
+  background-color: red;
+  transition: 2s;
+  width: 300px;
+}
+
+.color-blur {
+  background-color: yellow;
+  animation: glow 5s infinite alternate;
+  position: relative;
+  transition-timing-function: step-end;
+}
+
+@keyframes glow {
+  0% {
+    background-color: blue;
+    border-radius: 33%;
+    border-radius: none;
+    font-size: 20px;
+  }
+  25% {
+    background-color: red;
+    border-radius: 50%;
+    left: 100px;
+    top: 50px;
+    font-size: 30px;
+  }
+  50% {
+    background-color: aqua;
+    left: 150px;
+    top: 50px;
+    font-size: 50px;
+  }
+  100% {
+    background-color: blueviolet;
+    left: 0;
+    right: 0;
+    font-size: 70px;
+  }
+}
+
+.Name-1 {
+  background-color: black;
+  animation: img 5s infinite ease-in-out;
+  transition: background-image 3s ease-in-out;
+}
+
+@keyframes img {
+  0% {
+    background-image: url(img/download.jfif);
+    background-size: cover;
+    background-position: center;
+    top: 50px;
+    left: 100px;
+  }
+  25% {
+    background-image: url(img/istockphoto-182771965-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 70px;
+    left: 250px;
+  }
+  50% {
+    background-image: url(img/michael-sum-LEpfefQf4rU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 80px;
+    left: 300px;
+  }
+  100% {
+    background-image: url(img/Molly_006-2829x1886-2726x1886.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 100px;
+    left: 550px;
+  }
+}
+
+.Name-2 {
+  animation: round 8s infinite alternate;
+
+  animation-timing-function: ease-in-out;
+  background-color: red;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes round {
+  0% {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    bottom: 0px;
+    left: 165px;
+  }
+  25% {
+    border-radius: 62%;
+    width: 60px;
+    height: 60px;
+    bottom: 460px;
+    left: 165px;
+  }
+  50% {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: 460px;
+    right: 365px;
+  }
+
+  75% {
+    border-radius: 402;
+    width: 30px;
+    height: 30px;
+    bottom: 250px;
+    right: 265px;
+  }
+
+  100% {
+    border-radius: 92%;
+    width: 10px;
+    height: 10px;
+    top: 150px;
+    right: 190px;
+  }
+}
